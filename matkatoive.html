@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matkatoive | Trainsers Junamatkat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="sivun-ylaosa">
+        <div class="sisalto"> <a class="logo" href="index.html">Trainsers</a>
+            <nav class="paavalikko">
+                <ul>
+                    <li><a href="index.html">Etusivu</a></li>
+                    <li><a href="matkainfo.html">Matkainfo</a></li>
+                    <li><a href="matkatoive.html" class="aktiivinen">Matkatoive</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="sisalto">
+        <h1>Matkatoive</h1>
+        <div class="toive-asettelu">
+            <section>
+                <h2 id="lomake-otsikko">Kerro toiveesi</h2>
+                <p class="harjoitus">Tiedot eivät mene minnekään!</p>
+                <form id="toivelomake" action="#" method="get">
+                    <div class="kentta"> <label for="sahkoposti">Sähköposti</label> <input type="email" id="sahkoposti"
+                        name="sahkoposti" autocomplete="email" required>
+                    </div>
+                    <div class="kentta"> <label for="kohde">Kohde</label> <select id="kohde" name="kohde" required>
+                            <option value="">Valitse kohde</option>
+                            <option>Seinäjoki-Tampere</option>
+                            <option>Kokkola-Oulu</option>
+                            <option>Vaasa-Turku</option>
+                        </select> </div>
+                    <div class="kentta"> <label for="lahtopaiva">Lähtöpäivä</label> <input type="date" id="lahtopaiva"
+                            name="lahtopaiva" required> </div>
+                    <div class="kentta"> <label for="matkustajat">Matkustajien määrä (1–8)</label> <input type="number"
+                            id="matkustajat" name="matkustajat" min="1" max="8" step="1" required> </div> <button
+                        class="painike" type="submit">Lähetä matkatoive</button>
+                </form>
+            </section>
+            <section class="yhteystiedot">
+                <h2 id="yhteys-otsikko" style="margin-top:0">Yhteystiedot</h2>
+                <address> Trainsers Junamatkat<br>67300 Kokkola</address>
+                <p>Puh. 044 123 2321 <br>
+                Trainsers@gmail.com</p>
+            </section>
+        </div>
+       
+    </main>
+    <footer class="sivun-alaosa">
+        <div class="sisalto">
+            <p>Trainsers Junamatkat - 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
